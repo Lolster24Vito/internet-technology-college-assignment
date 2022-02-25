@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="Novosti.css">
+    <link rel="stylesheet" href="KontaktPopUpBox.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="KontaktPopUp.js"></script>
+
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <ul class="LeftUlHeader">
+            <img src="./img/Algebra-logo.png" id="AlgebraLogo" alt="">
+            <li ><a href="index.html" class="HeaderElement"><img src="img/homeIcon.png" class="headerImg"> Početna</a> </li>
+            <li><a href="about.html" class="HeaderElement"><img src="img/SpeechBubble.png" class="headerImg"> O nama</a></li>
+            <li><a href="Novosti.html" class="HeaderElement"><img src="img/infoIcon.png" class="headerImg">Novosti</a></li>
+            <li><a href="NastavniPlan.html" class="HeaderElement"><img src="img/infoIcon.png" class="headerImg">Nastavni plan</a></li>
+            <li><a href="javascript:ShowKontaktForm();"class="HeaderElement"> <img src="img/emailIcon.png" class="headerImg">Kontakt</a></li>
+
+        </ul>
+    </header>
+
+
+<main>
+    <div id="titleAndLine">
+
+    <h1 id="Novosti">Novosti</h1>
+    <hr>
+    </div>
+
+    <div id="newsContainer">
+        
+        <a href="novost-1.html">
+        <div class="newsBlock" id="Pobjeda">
+            <p class="newsDate">28.08.2019</p>
+            <p class="newsInfo">Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti na natjecanju WorldSkills Kazan 2019.</p>
+        </div></a>
+
+        <a href="novost-2.html">
+        <div class="newsBlock" id="Stipendija">
+            <p class="newsDate">22.07.2019</p>
+            <p class="newsInfo">Nagrađujemo izvrsnost: Objavljujemo dobitnike stipendijskog natječaja šk.god 2018./2019.!</p>
+        </div></a>
+
+        <a href="novost-3.html">
+        <div class="newsBlock" id="Junior">
+            <p class="newsDate">18.04.2019</p>
+            <p class="newsInfo">Digitalno Junior ljeto</p>
+        </div></a>
+    </div>
+    
+    
+
+ <div class="inactive" id="KontaktLightBoxContainer">
+    <div id="lightboxWrapperKontakt">
+        <h1 id="Kontaktirajte"><i class="material-icons" id="KontaktPismo">email</i>Kontaktirajte nas </h1>
+        <hr id="KontaktLinija">
+       <form action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+
+           <label for="nameInput" class="formLabel">Puno ime:</label>
+           <input type="text" name="name" id="nameInput" class="inputBox" required>
+
+           <label for="emailInput" class="formLabel">E-mail:</label>
+           <input type="email" id="emailInput" name="email" class="inputBox" required>
+           
+           <label for="importanceInput" class="formLabel">Važnost poruke:</label>
+           <select name="importance" id="importanceInput" class="inputBox">
+               <option value="Visoka">Visoka</option>
+               <option value="Niska">Niska</option>
+           </select>
+           
+           <label for="messageInput" class="formLabel">Vaša poruka:</label>
+           <textarea rows="8" cols="50" name="message" id="messageInput" required class="inputBox"></textarea>
+
+           <label for="newsletterInput"  id="checkboxLabel" class="inputBox" >Primaj newsletter:
+           <input type="checkbox" id="newsletterInput" name="newsletter" ><br></label>
+           
+           <input type="submit" value="Pošalji" class="KontaktButton" id="SubmitKontakt">
+           <button id="OdustaniKontakt" class="KontaktButton" onclick="HideKontaktForm()">Odustani</button>
+
+       </form>
+   </div>
+</div>
+
+
+
+</main>
+    <footer>
+
+        <h1 id="FooterTopText" class="blinker">BUDI IZVRSTAN U ONOM ŠTO VOLIŠ</h1>
+        <br><br>
+        <h1 id="FooterBottomText" >ZAISKRI</h1>
+  
+</footer>
+
+
+</body>
+</html>

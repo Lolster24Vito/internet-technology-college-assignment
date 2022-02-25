@@ -1,0 +1,95 @@
+.inactive{
+    opacity: 0;
+    pointer-events: none;
+}
+.active{
+    opacity: 1;
+    pointer-events:all;
+}
+
+#KontaktLightBoxContainer{
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lightboxWrapperKontakt{
+    background-color: white;
+    border-radius: 5px;
+    width:70vw ;
+    padding: 2%;
+    
+}
+
+#Kontaktirajte{
+font-size: 2.5rem;
+width:100%;
+font-weight: 400;
+}
+hr#KontaktLinija{
+    width: 100%;
+    border-top: 3px solid rgba(116, 116, 116, 0.3);
+}
+#KontaktPismo{
+    font-size:40px; 
+    color: rgb(17, 227, 255);
+    vertical-align:middle;
+    position: relative;
+    top:-5px;
+}
+.inputBox{
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 3px;
+    height: 30px;
+    padding: 5px 3px;
+}
+#checkboxLabel{
+    padding: 0px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+textarea.inputBox{
+    height: 100%;
+}
+.formLabel{
+    display:block;
+    width: 100%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.KontaktButton{
+    padding: 9px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    margin-left: 10px;
+    border: 1px solid grey ;
+}
+#SubmitKontakt{
+    background-color: rgb(20, 93, 202);
+}
+#OdustaniKontakt{
+    background-color: rgb(201, 22, 22);
+}
+
+
+@media screen and (max-width:600px)
+{
+    .inputBox{
+        padding:2px 1px;
+    }
+}
+@media screen and (max-width:480px)
+{
+    #Kontaktirajte{
+        font-size: 1rem;
+    }
+}

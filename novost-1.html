@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT - projektni zadatak</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="NovostiClanak.css">
+    <link rel="stylesheet" href="KontaktPopUpBox.css">
+    <script src="KontaktPopUp.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="NovostiLightBox.js"></script>
+
+
+</head>
+<body>
+
+    <header>
+        <ul class="LeftUlHeader">
+            <img src="./img/Algebra-logo.png" id="AlgebraLogo" alt="">
+            <li ><a href="index.html" class="HeaderElement"><img src="img/homeIcon.png" class="headerImg"> Početna</a> </li>
+            <li><a href="about.html" class="HeaderElement"><img src="img/SpeechBubble.png" class="headerImg"> O nama</a></li>
+            <li><a href="Novosti.html" class="HeaderElement"><img src="img/infoIcon.png" class="headerImg">Novosti</a></li>
+            <li><a href="NastavniPlan.html" class="HeaderElement"><img src="img/infoIcon.png" class="headerImg">Nastavni plan</a></li>
+            <li><a href="javascript:ShowKontaktForm();"class="HeaderElement"> <img src="img/emailIcon.png" class="headerImg">Kontakt</a></li>
+
+        </ul>
+
+    </header>
+<main>
+    <div class="Background" id="HepiPepi">
+        <h2 id="BackgroundText">Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti</h2>
+    </div>
+    <div id="titleAndLine">
+
+        <h1 id="ONama">WorldSkills natjecanje - Kazan 2019.</h1>
+        <hr>
+    </div>
+        
+<p class="newsText">
+    Nakon godinu dana priprema za natjecanje WorldSkills
+                        Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                        cijelog svijeta, trud se itekako isplatio. Josip,
+                        student 3. godine preddiplomskog studija sistemskog
+                        inženjerstva osvojio je 12. mjesto u vještini IT
+                        Networks and System Administration te osvojio medalju
+                        izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                        mentorima koji su ga pripremali za ovo natjecanje -
+                        voditelju studija sistemskog inženjerstva Silviju
+                        Papiću, voditelju katedre za operacijske sustave -
+                        Vedranu Dakiću i asistentu na studiju sistemskog
+                        inženjerstva - Jasminu Redžepagiću. Čestitke i našem
+                        studentu 3.godine preddiplomskog studija programskog
+                        inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                        za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                        16.mjestu u vještini IT Software Solutions for Business.
+</p>
+
+<div id="imagesGrid">
+    <div class="imagesZoom">
+        
+        <img src="img/galerija1.jpg" class="lightBoxEnabled" id="img1">
+    </div>
+    <div class="imagesZoom">
+        <img src="img/galerija2.jpg" class="lightBoxEnabled" id="img2">
+    </div>
+    <video src="video/worldskills.mp4" controls id="vid1"></video>
+</div>
+
+ <div class="inactive" id="lightboxContainer">
+     <div id="lightboxWrapper">
+         <img src="img/galerija1.jpg" alt="" class="lightboxImg">
+         <img src="img/galerija1.jpg" alt="" class="secondImageForAnimation">
+         
+         <!--- <img src="img/galerija1.jpg" alt="" class="lightboxImg"> -->   
+         
+         <button id="LeftButton" class="buttonLightBox">
+             <i class="material-icons" style="color: white;">arrow_back_ios</i>
+         </button>
+    <button id="RightButton" class="buttonLightBox">
+        <i class="material-icons" style="color: white;">arrow_forward_ios</i>    
+    </button>
+</div>
+ </div>
+ 
+ <div class="inactive" id="KontaktLightBoxContainer">
+     <div id="lightboxWrapperKontakt">
+         <h1 id="Kontaktirajte"><i class="material-icons" id="KontaktPismo">email</i>Kontaktirajte nas </h1>
+         <hr id="KontaktLinija">
+        <form action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+
+            <label for="nameInput" class="formLabel">Puno ime:</label>
+            <input type="text" name="name" id="nameInput" class="inputBox" required>
+
+            <label for="emailInput" class="formLabel">E-mail:</label>
+            <input type="email" id="emailInput" name="email" class="inputBox" required>
+            
+            <label for="importanceInput" class="formLabel">Važnost poruke:</label>
+            <select name="importance" id="importanceInput" class="inputBox">
+                <option value="Visoka">Visoka</option>
+                <option value="Niska">Niska</option>
+            </select>
+            
+            <label for="messageInput" class="formLabel">Vaša poruka:</label>
+            <textarea rows="8" cols="50" name="message" id="messageInput" required class="inputBox"></textarea>
+
+            <label for="newsletterInput"  id="checkboxLabel" class="inputBox" >Primaj newsletter:
+            <input type="checkbox" id="newsletterInput" name="newsletter" ><br></label>
+            
+            <input type="submit" value="Pošalji" class="KontaktButton" id="SubmitKontakt">
+            <button id="OdustaniKontakt" class="KontaktButton" onclick="HideKontaktForm()">Odustani</button>
+
+        </form>
+    </div>
+ </div>
+
+
+
+</main>
+
+
+<footer>
+
+        <h1 id="FooterTopText" class="blinker">BUDI IZVRSTAN U ONOM ŠTO VOLIŠ</h1>
+        <br><br>
+        <h1 id="FooterBottomText" >ZAISKRI</h1>
+  
+</footer>
+
+
+
+
+    
+</body>
+</html>

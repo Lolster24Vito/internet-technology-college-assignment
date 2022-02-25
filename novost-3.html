@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT - projektni zadatak</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="NovostiClanak.css">
+    <link rel="stylesheet" href="KontaktPopUpBox.css">
+    <script src="KontaktPopUp.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+
+    <header>
+        <ul class="LeftUlHeader">
+            <img src="./img/Algebra-logo.png" id="AlgebraLogo" alt="">
+            <li ><a href="index.html" class="HeaderElement"><img src="img/homeIcon.png" class="headerImg"> Početna</a> </li>
+            <li><a href="about.html" class="HeaderElement"><img src="img/SpeechBubble.png" class="headerImg"> O nama</a></li>
+            <li><a href="Novosti.html" class="HeaderElement"><img src="img/infoIcon.png" class="headerImg">Novosti</a></li>
+            <li><a href="NastavniPlan.html" class="HeaderElement"><img src="img/infoIcon.png" class="headerImg">Nastavni plan</a></li>
+            <li><a href="javascript:ShowKontaktForm();"class="HeaderElement"> <img src="img/emailIcon.png" class="headerImg">Kontakt</a></li>
+
+        </ul>
+
+    </header>
+<main>
+    <div class="Background" id="JuniorBackground">
+        <h2 id="BackgroundText"></h2>
+    </div>
+    <div id="titleAndLine">
+
+        <h1 id="ONama">Digitalno Junior ljeto</h1>
+        <hr>
+    </div>
+        
+<p class="newsText">
+    Algebra Junior organizira edukativne i zabavne ljetne
+    praznike za sve osnovnoškolce! I ove smo godine
+    pripremili digitalne radionice za djecu čiji je fokus
+    rješavanja raznih problema korištenjem tehnologije,
+    multimedije, digitalnog dizajna i komunikacija te
+    stvaranju sadržaja u svim multimedijskim i softverskim
+    oblicima. Radionice se održavaju u sklopu Digitalnog
+    ljetnog kampa u Crikvenici i Digitalne ljetne škole u
+    Zagrebu kako bismo se družili, zabavljali i učili i na
+    moru i na kontinentu! Na digitalnom kampu i u školi
+    provodit će se dva različita programa koji su
+    namijenjena djeci od 1. do 8. razreda. Ovisno o
+    odabranom terminu, polaznici će prolaziti kroz 1. ili 2.
+    program, a u slučaju pohađanja dvotjednih programa –
+    oba. U prvom programu nađe nindže uče biti glazbeni
+    menadžeri dok su u drugom novinari i kreatori
+    informacija masovnih medija. Provjerite termine, cijene
+    i lokacije škole i kampa na sljedećem linku.
+</p>
+
+
+
+<div class="inactive" id="KontaktLightBoxContainer">
+    <div id="lightboxWrapperKontakt">
+        <h1 id="Kontaktirajte"><i class="material-icons" id="KontaktPismo">email</i>Kontaktirajte nas </h1>
+        <hr id="KontaktLinija">
+       <form action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+
+           <label for="nameInput" class="formLabel">Puno ime:</label>
+           <input type="text" name="name" id="nameInput" class="inputBox" required>
+
+           <label for="emailInput" class="formLabel">E-mail:</label>
+           <input type="email" id="emailInput" name="email" class="inputBox" required>
+           
+           <label for="importanceInput" class="formLabel">Važnost poruke:</label>
+           <select name="importance" id="importanceInput" class="inputBox">
+               <option value="Visoka">Visoka</option>
+               <option value="Niska">Niska</option>
+           </select>
+           
+           <label for="messageInput" class="formLabel">Vaša poruka:</label>
+           <textarea rows="8" cols="50" name="message" id="messageInput" required class="inputBox"></textarea>
+
+           <label for="newsletterInput"  id="checkboxLabel" class="inputBox" >Primaj newsletter:
+           <input type="checkbox" id="newsletterInput" name="newsletter" ><br></label>
+           
+           <input type="submit" value="Pošalji" class="KontaktButton" id="SubmitKontakt">
+           <button id="OdustaniKontakt" class="KontaktButton" onclick="HideKontaktForm()">Odustani</button>
+
+       </form>
+   </div>
+</div>
+
+
+</main>
+
+<footer>
+
+        <h1 id="FooterTopText" class="blinker">BUDI IZVRSTAN U ONOM ŠTO VOLIŠ</h1>
+        <br><br>
+        <h1 id="FooterBottomText" >ZAISKRI</h1>
+  
+</footer>
+
+
+    
+</body>
+</html>

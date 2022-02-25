@@ -1,0 +1,99 @@
+
+#Novosti{
+    display:block;
+    font-size:30px ;
+    overflow:hidden;
+    text-align: center;
+    padding:1.9vh 0px ;
+}
+hr{
+    width:50%;
+    margin: auto;
+    border-top: 5px solid darkorange;
+    margin-bottom: 50px;
+}
+
+#Pobjeda{
+    background-image: url("img/novost1.jpg");
+}
+#Stipendija{
+    background-image: url("img/novost2.jpg");
+}
+#Junior{
+    background-image: url("img/novost3.jpg");
+}
+.newsBlock{
+    background-position: center top;
+    background-size: cover;
+    border-radius: 50%;
+   /* width: 20vw;
+    height:20vw;*/
+    /*width: 18vw;
+    height:18vw;*/
+    width: 250px;
+    height: 250px;
+    border: 25px solid white;
+    box-shadow: 3px 3px 10px rgb(126, 125, 125), -3px -3px 10px rgb(126, 125, 125),3px 0px 10px rgb(126, 125, 125),-3px 0px 10px rgb(126, 125, 125) ;
+
+   display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.newsDate{
+    color:rgba(236, 236, 0, 0.925);
+    font-weight: 600;
+    font-size: 80%;
+    text-align: center;
+    text-shadow: 1px 1px rgb(39, 39, 39);
+
+}
+
+.newsInfo{
+    color:white;
+    font-weight: 600;
+    font-size: 80%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: 1px 1px rgb(39, 39, 39);
+   /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;/*/
+
+
+}
+#newsContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 4% 0px;
+    width: 100%;
+    animation:ImageShowUpAnimation 1.5s ;
+}
+a{
+    text-decoration: none;
+}
+#titleAndLine{
+    animation:moveTitle 1.5s ;
+
+}
+@keyframes moveTitle {
+    from{
+        transform: translateY(200px);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes ImageShowUpAnimation {
+    0%{
+    transform: scale(0);
+    opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

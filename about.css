@@ -1,0 +1,276 @@
+html,body{
+    overflow-x: hidden;
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+
+      }
+}
+
+@font-face {
+    font-family: cursiveLetterFont;
+    src: url(fonts/Allura-Regular.otf);
+  }
+
+ul.RightUlHeader{
+    
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center ;
+    margin-left: auto;
+    position: relative;
+    /*animation: 1s cubic-bezier(0.64, 0.57, 0.67, 1.53) 0s  1 slideInFromRight;
+    animation-delay: 3s;*/
+ }
+
+ 
+.HeaderElementR{
+    padding: 0.8vw;
+    color:yellow;
+    text-decoration:none;
+    font-weight: 500;
+}
+.HeaderElementR:hover{
+color:orange;
+}
+#Background{
+    display: flex;
+   /* width: 100%;*/
+    height: 300px;
+    top: 0%;
+    right: 100px;
+    background-image: url('img/kampus-iz-zraka-min-1.jpg');
+    background-position:center;
+    background-size:cover;
+    bottom: 2vh;
+    align-items:center;
+
+    z-index: -10;
+    
+}
+#ONama,#OurValH1{
+    text-align: center;
+    padding:1.9vh 0px ;
+}
+
+#ONama{
+    display:block;
+    font-size:30px ;
+    margin: 20%;
+    overflow:hidden;
+}
+hr{
+    width:50%;
+    margin: auto;
+    border-top: 5px solid darkorange;
+}
+
+.h1Naslov{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size:25px;
+    color: darkred;
+    font-weight: 700;
+    text-align: center;
+}
+.letter{
+    width: 100%;
+    background-color: rgb(230, 221, 221);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding:55px 0px;
+    
+}
+.letterText{
+    padding:40px 0px; 
+    width: 50%;
+    margin: auto;
+    font-family: cursiveLetterFont;
+   /* font-family: Brush Script MT, Brush Script Std, cursive	;*/
+    font-size: 22px;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    margin:auto;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+
+.gridBlock{
+    border: 1px solid grey;
+    border-radius: 7px;
+    padding-bottom: 15%;
+    background-color: white;
+    
+}
+.gridBlock>h2{
+    font-weight: 400;
+    font-size: 20px;
+    margin:20px 15px;
+    text-transform: uppercase;
+
+}
+
+.gridBlock>p{
+    font-size: 12px;
+    margin:5px 15px;
+    border-top: solid 1px grey ;
+    padding-top: 15px;
+}
+
+.iconNextToH1{
+    height: 25px;
+    filter: invert(10%) sepia(66%) saturate(5395%) hue-rotate(355deg) brightness(87%) contrast(114%);
+    vertical-align:baseline;
+    
+}
+.blueText{
+    color:rgb(36, 125, 180)
+}
+
+.gridContainer2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+    margin:auto;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.gridBlock2{
+    border-radius: 7px;
+    padding-bottom: 15%;    
+}
+
+.gridBlock2> h2{
+    font-weight: 800;
+    font-size: 13px;
+    margin:20px 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid grey;
+}
+.gridBlock2> img{
+    display: block;
+    height: 60px;
+    margin:auto;
+
+}
+#gridContainer3{
+    width: 60%;
+    display:grid;
+    margin:auto;
+
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+
+#KakoBackground{
+    background-image: url("img/map.PNG");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-blend-mode: luminosity;
+    z-index: -10;
+    
+}
+#ovdje{
+    text-decoration: none;
+    color:dodgerblue;
+    font-weight: 500;
+}
+.gridBlock>h2.title{
+    font-weight: 600;
+    font-size:25px;
+    margin:20px 15px;
+    text-transform: none;
+}
+
+.gridBlock>p.textGrid3{
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border:none;
+}
+#gmap_canvas{
+    display:block;
+    width: 57vw;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:630px)
+{
+    ul.LeftUlHeader{
+        width: 50%;
+        align-items: flex-start;
+    }
+    ul.LeftUlHeader :nth-child(5){
+        margin-left: 0px;
+    }
+    ul.RightUlHeader{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    ul.RightUlHeader> li{
+        margin-top:10px;
+    }
+}  
+
+@media screen and (max-width:1250px)
+{
+    .gridContainer,.gridContainer2,#gridContainer3{
+        width: 95%;
+    }
+    #gmap_canvas{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width:768px)
+{
+    #secondGrid.gridContainer{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+    .gridContainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+    #gridContainer3{
+        grid-template-columns: 1fr;
+    }
+    #gridContainer3>.gridBlock{
+        margin-top: 3%;
+    }
+    #gmap_canvas{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width:950px)
+{
+    .gridContainer2{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,62 @@
+
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0%;
+    min-width: 100%;
+  }
+  .center>h1{
+      font-weight: 400;
+    font-size: 3vw;
+}
+  .center {
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    color: white;
+  }
+
+  @keyframes blinkTop {
+0% {border-right: 10px solid rgba(255, 255, 255, 1) ;}
+100% {border-right:10px solid rgba(255, 255, 255, 0);}
+
+}
+
+  #TypingTextTop{
+  
+    position:absolute;
+    top: 0%;
+    left: 30%;
+
+}
+.blinker{
+    animation-name: blinkTop;
+    animation-duration: 0.5s;
+    animation-direction: forwards;
+    animation-iteration-count:infinite;
+}
+#TypingTextBottom{
+
+    position:absolute;
+    color: darkred;
+    font-weight: 700;
+    left: 30%;
+
+}
+
+@media screen and (max-width:700px)
+{
+    #myVideo
+    {
+      right: -55%;
+    }
+
+}
+@media screen and (max-width:400px)
+{
+    #myVideo
+    {
+      right: -85%;
+    }
+
+}
